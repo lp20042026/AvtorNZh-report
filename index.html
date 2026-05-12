@@ -81,8 +81,8 @@ body{background:var(--steel);color:var(--blk);font-family:var(--fb);font-size:13
 .good{color:var(--good);} .warn{color:var(--warn);} .bad{color:var(--bad);} .neu{color:var(--mu);}
 
 /* ── ФИЛЬТРЫ ── */
-.filters{display:flex;gap:6px;margin-bottom:16px;}
-.fbtn{font-family:var(--fh);font-size:8px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:8px 14px;border:1px solid var(--bo2);background:transparent;color:var(--mu);cursor:pointer;transition:all .15s;}
+.filters{display:flex;gap:6px;margin-bottom:16px;flex-wrap:wrap;}
+.fbtn{font-family:var(--fh);font-size:7px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;padding:7px 10px;border:1px solid var(--bo2);background:transparent;color:var(--mu);cursor:pointer;transition:all .15s;white-space:nowrap;}
 .fbtn.active{background:var(--blk);color:#fff;border-color:var(--blk);}
 .fbtn:hover:not(.active){border-color:var(--blk);color:var(--blk);}
 
@@ -121,6 +121,12 @@ body{background:var(--steel);color:var(--blk);font-family:var(--fb);font-size:13
   .pname{font-size:11px;}
   .cell{font-size:10px;}
   .trow,.thead{padding-left:10px;padding-right:10px;}
+  .cards{grid-template-columns:repeat(2,1fr);}
+  .card{padding:14px 12px;}
+  .card-lbl{font-size:7px;letter-spacing:.12em;margin-bottom:6px;}
+  .v1{font-size:22px;}
+  .u1{font-size:9px;}
+  .v2,.s1{font-size:13px;}
 }
 
 /* ── ПОДВАЛ ── */
@@ -241,7 +247,7 @@ function buildSC(type){
     +'<div class="row1"><span class="v1 '+cls(pvQ)+'">'+ps(pvQ)+'</span><span class="u1">по шт.</span></div>'
     +'<div class="row2"><span class="v2 '+cls(pvS)+'">'+ps(pvS)+'</span><span class="u2">по тыс&#8381;</span></div>'
     +'<div class="rowsub"><span class="s1 '+cls(pvQ)+'">'+(devQ>=0?"+":"")+f(devQ)+' шт.</span><span class="s2">/</span><span class="s1 '+cls(pvS)+'">'+(devS>=0?"+":"")+f(devS)+' тыс&#8381;</span></div></div>'
-    +'<div class="card" style="--cl:#1a5e38"><div class="card-lbl">Ожид. за месяц (run rate)</div>'
+    +'<div class="card" style="--cl:#1a5e38"><div class="card-lbl">Ожид. за месяц</div>'
     +'<div class="row1"><span class="v1 '+(rQ?cls(rQ.p):"neu")+'">'+(rQ?f(rQ.proj):"—")+'</span><span class="u1">шт.</span></div>'
     +'<div class="row2"><span class="v2 '+(rS?cls(rS.p):"neu")+'">'+(rS?f(rS.proj):"—")+'</span><span class="u2">тыс&#8381;</span></div>'
     +'<div class="rowsub"><span class="s1 '+(rQ?cls(rQ.p):"neu")+'">'+(rQ?rQ.p+"%":"—")+' шт.</span><span class="s2">/</span><span class="s1 '+(rS?cls(rS.p):"neu")+'">'+(rS?rS.p+"%":"—")+' тыс&#8381;</span></div></div>';
