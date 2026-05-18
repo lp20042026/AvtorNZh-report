@@ -149,7 +149,7 @@ body{background:var(--steel);color:var(--blk);font-family:var(--fb);font-size:13
     <div class="hdr-right">
       <div class="hdr-lbl">Отчёт &middot; план / факт</div>
       <div class="hdr-title">Май 2026</div>
-      <div class="hdr-date">данные на 11.05.2026</div>
+      <div class="hdr-date">данные на 18.05.2026</div>
     </div>
   </div>
   <div class="tabs">
@@ -205,27 +205,28 @@ body{background:var(--steel);color:var(--blk);font-family:var(--fb);font-size:13
 <script>
 var PR=["Академия 1","Академия 2","Арбери 1","Арбери 2","Ботаника","Доброе","Терра","ТЕЗИС","Сухумская"];
 var SD={
-  "Академия 1":{pl:{кв:1,парк:3,клад:0,комм:0},fc:{кв:1,парк:0,клад:0,комм:0},plS:{кв:11347,парк:6000,клад:0,комм:0},fcS:{кв:6018,парк:0,клад:0,комм:0}},
-  "Академия 2":{pl:{кв:5,парк:2,клад:2,комм:0},fc:{кв:1,парк:0,клад:1,комм:0},plS:{кв:47867,парк:4000,клад:779,комм:0},fcS:{кв:7271,парк:0,клад:404,комм:0}},
-  "Арбери 1":  {pl:{кв:5,парк:2,клад:4,комм:0},fc:{кв:0,парк:2,клад:7,комм:0},plS:{кв:43763,парк:3540,клад:1824,комм:0},fcS:{кв:0,парк:3900,клад:3792,комм:0}},
-  "Арбери 2":  {pl:{кв:15,парк:2,клад:2,комм:1},fc:{кв:5,парк:2,клад:1,комм:0},plS:{кв:107378,парк:3540,клад:1041,комм:715},fcS:{кв:31684,парк:3350,клад:418,комм:0}},
+  "Академия 1":{pl:{кв:1,парк:3,клад:0,комм:0},fc:{кв:1,парк:0,клад:0,комм:0},plS:{кв:11347200,парк:6000000,клад:0,комм:0},fcS:{кв:6017935,парк:0,клад:0,комм:0}},
+  "Академия 2":{pl:{кв:5,парк:2,клад:2,комм:0},fc:{кв:2,парк:0,клад:1,комм:0},plS:{кв:47866920,парк:4000000,клад:779460,комм:0},fcS:{кв:14206426,парк:0,клад:404400,комм:0}},
+  "Арбери 1":  {pl:{кв:5,парк:2,клад:4,комм:0},fc:{кв:0,парк:4,клад:7,комм:0},plS:{кв:43763127,парк:3540000,клад:1824000,комм:0},fcS:{кв:0,парк:7500000,клад:3791480,комм:0}},
+  "Арбери 2":  {pl:{кв:15,парк:2,клад:2,комм:1},fc:{кв:7,парк:3,клад:2,комм:0},plS:{кв:107378000,парк:3540000,клад:1041000,комм:715000},fcS:{кв:50926498.2,парк:5100000,клад:838350,комм:0}},
   "Ботаника":  {pl:{кв:0,парк:0,клад:0,комм:0},fc:{кв:0,парк:0,клад:0,комм:0},plS:{кв:0,парк:0,клад:0,комм:0},fcS:{кв:0,парк:0,клад:0,комм:0}},
-  "Доброе":    {pl:{кв:7,парк:0,клад:0,комм:0},fc:{кв:0,парк:0,клад:0,комм:0},plS:{кв:37310,парк:0,клад:0,комм:0},fcS:{кв:0,парк:0,клад:0,комм:0}},
-  "Терра":     {pl:{кв:8,парк:1,клад:3,комм:0},fc:{кв:2,парк:0,клад:0,комм:0},plS:{кв:44996,парк:1550,клад:1097,комм:0},fcS:{кв:8526,парк:0,клад:0,комм:0}},
-  "ТЕЗИС":     {pl:{кв:7,парк:1,клад:1,комм:1},fc:{кв:0,парк:0,клад:0,комм:0},plS:{кв:57424,парк:1950,клад:419,комм:23867},fcS:{кв:0,парк:0,клад:0,комм:0}},
+  "Доброе":    {pl:{кв:7,парк:0,клад:0,комм:0},fc:{кв:0,парк:0,клад:0,комм:0},plS:{кв:37310000,парк:0,клад:0,комм:0},fcS:{кв:0,парк:0,клад:0,комм:0}},
+  "Терра":     {pl:{кв:8,парк:1,клад:3,комм:0},fc:{кв:2,парк:0,клад:0,комм:0},plS:{кв:44996000,парк:1550000,клад:1097000,комм:0},fcS:{кв:8526240,парк:0,клад:0,комм:0}},
+  "ТЕЗИС":     {pl:{кв:7,парк:1,клад:1,комм:1},fc:{кв:0,парк:0,клад:0,комм:0},plS:{кв:57424000,парк:1950000,клад:419000,комм:23867000},fcS:{кв:0,парк:0,клад:0,комм:0}},
   "Сухумская": {pl:{кв:0,парк:0,клад:0,комм:0},fc:{кв:0,парк:0,клад:0,комм:0},plS:{кв:0,парк:0,клад:0,комм:0},fcS:{кв:0,парк:0,клад:0,комм:0}}
 };
 var MD={
-  "Академия 1":{plFM:19642,pl:19043,fc:804},    "Академия 2":{plFM:47922,pl:22313,fc:9932},
-  "Арбери 1":  {plFM:77095,pl:54602,fc:26305},  "Арбери 2":  {plFM:133760,pl:108309,fc:41424},
-  "Ботаника":  {plFM:953,pl:985,fc:2813},        "Доброе":    {plFM:34433,pl:14484,fc:9822},
-  "Терра":     {plFM:43301,pl:25262,fc:13797},   "ТЕЗИС":     {plFM:40275,pl:0,fc:0},
+  "Академия 1":{plFM:19642,pl:19043,fc:7120},    "Академия 2":{plFM:47922,pl:22313,fc:13811},
+  "Арбери 1":  {plFM:77095,pl:55472,fc:36412},   "Арбери 2":  {plFM:133760,pl:124398,fc:57538},
+  "Ботаника":  {plFM:953,pl:985,fc:2955},         "Доброе":    {plFM:34433,pl:14484,fc:11973},
+  "Терра":     {plFM:43301,pl:25262,fc:15557},    "ТЕЗИС":     {plFM:40275,pl:0,fc:0},
   "Сухумская": {plFM:0,pl:0,fc:0}
 };
 
-var DE=11,DT=31,CUR="все",sCI=null,mCI=null,moneyBuilt=false;
+var DE=18,DT=31,CUR="все",sCI=null,mCI=null,moneyBuilt=false;
 
 function f(n){return Math.round(n).toLocaleString("ru-RU");}
+function fr(n){return Math.round(n/1000).toLocaleString("ru-RU");}  // рубли -> тыс
 function pc(fc,pl){return pl?Math.round(fc/pl*100):null;}
 function ps(v){return v===null?"—":v+"%";}
 function bc(v){if(v===null)return"#a8bcc8";if(v>=100)return"#1a5e38";if(v>=60)return"#7a5000";return"#7a1616";}
@@ -239,17 +240,17 @@ function buildSC(type){
   var pvQ=pc(tFc,tPl),pvS=pc(tFcS,tPlS),devQ=tFc-tPl,devS=tFcS-tPlS,rQ=rr(tFc,tPl),rS=rr(tFcS,tPlS);
   var h='<div class="card" style="--cl:#9ab4c8"><div class="card-lbl">План май</div>'
     +'<div class="row1"><span class="v1">'+f(tPl)+'</span><span class="u1">шт.</span></div>'
-    +'<div class="row2"><span class="v2">'+f(tPlS)+'</span><span class="u2">тыс&#8381;</span></div></div>'
+    +'<div class="row2"><span class="v2">'+fr(tPlS)+'</span><span class="u2">тыс&#8381;</span></div></div>'
     +'<div class="card" style="--cl:#161616"><div class="card-lbl">Факт май</div>'
     +'<div class="row1"><span class="v1">'+f(tFc)+'</span><span class="u1">шт.</span></div>'
-    +'<div class="row2"><span class="v2">'+f(tFcS)+'</span><span class="u2">тыс&#8381;</span></div></div>'
+    +'<div class="row2"><span class="v2">'+fr(tFcS)+'</span><span class="u2">тыс&#8381;</span></div></div>'
     +'<div class="card" style="--cl:#8a6010"><div class="card-lbl">Выполнение к дате</div>'
     +'<div class="row1"><span class="v1 '+cls(pvQ)+'">'+ps(pvQ)+'</span><span class="u1">по шт.</span></div>'
     +'<div class="row2"><span class="v2 '+cls(pvS)+'">'+ps(pvS)+'</span><span class="u2">по тыс&#8381;</span></div>'
-    +'<div class="rowsub"><span class="s1 '+cls(pvQ)+'">'+(devQ>=0?"+":"")+f(devQ)+' шт.</span><span class="s2">/</span><span class="s1 '+cls(pvS)+'">'+(devS>=0?"+":"")+f(devS)+' тыс&#8381;</span></div></div>'
+    +'<div class="rowsub"><span class="s1 '+cls(pvQ)+'">'+(devQ>=0?"+":"")+f(devQ)+' шт.</span><span class="s2">/</span><span class="s1 '+cls(pvS)+'">'+(devS>=0?"+":"")+fr(devS)+' тыс&#8381;</span></div></div>'
     +'<div class="card" style="--cl:#1a5e38"><div class="card-lbl">Ожид. за месяц</div>'
     +'<div class="row1"><span class="v1 '+(rQ?cls(rQ.p):"neu")+'">'+(rQ?f(rQ.proj):"—")+'</span><span class="u1">шт.</span></div>'
-    +'<div class="row2"><span class="v2 '+(rS?cls(rS.p):"neu")+'">'+(rS?f(rS.proj):"—")+'</span><span class="u2">тыс&#8381;</span></div>'
+    +'<div class="row2"><span class="v2 '+(rS?cls(rS.p):"neu")+'">'+(rS?fr(rS.proj):"—")+'</span><span class="u2">тыс&#8381;</span></div>'
     +'<div class="rowsub"><span class="s1 '+(rQ?cls(rQ.p):"neu")+'">'+(rQ?rQ.p+"%":"—")+' шт.</span><span class="s2">/</span><span class="s1 '+(rS?cls(rS.p):"neu")+'">'+(rS?rS.p+"%":"—")+' тыс&#8381;</span></div></div>';
   document.getElementById("sc").innerHTML=h;
 }
@@ -264,7 +265,7 @@ function buildMC(){
     +'<div class="row1"><span class="v1">'+f(tFc)+'</span><span class="u1">тыс&#8381;</span></div></div>'
     +'<div class="card" style="--cl:#7a1616"><div class="card-lbl">Выполнение к дате</div>'
     +'<div class="row1"><span class="v1 '+cls(pv)+'">'+ps(pv)+'</span><span class="u1">от плана ФМ</span></div>'
-    +'<div class="rowsub"><span class="s1 '+cls(pv)+'">'+(dev>=0?"+":"")+f(dev)+'</span><span class="s2">тыс&#8381; отклонение</span></div></div>'
+    +'<div class="rowsub"><span class="s1 '+cls(pv)+'">'+(dev>=0?"+":"")+fr(dev)+'</span><span class="s2">тыс&#8381; отклонение</span></div></div>'
     +'<div class="card" style="--cl:#1a5e38"><div class="card-lbl">Ожид. за месяц</div>'
     +'<div class="row1"><span class="v1 '+(tPlFM?cls(Math.round(tPl/tPlFM*100)):"neu")+'">'+f(tPl)+'</span><span class="u1">тыс&#8381;</span></div>'
     +'<div class="rowsub"><span class="s1 '+(tPlFM?cls(Math.round(tPl/tPlFM*100)):"neu")+'">'+(tPlFM?Math.round(tPl/tPlFM*100)+"%":"—")+'</span><span class="s2">от плана ФМ</span></div></div>';
@@ -317,18 +318,18 @@ function drawSTable(type){
     else{
       rows+='<div class="trow" style="grid-template-columns:'+g+'"><span class="pname">'+pr+'</span>';
       if(!mob){rows+='<span class="cell mu">'+pl+'</span><span class="cell bld">'+fc+'</span>';}
-      rows+='<span class="cell mu">'+(plS?f(plS):"—")+'</span><span class="cell bld">'+(fcS?f(fcS):"—")+'</span>';
+      rows+='<span class="cell mu">'+(plS?fr(plS):"—")+'</span><span class="cell bld">'+(fcS?fr(fcS):"—")+'</span>';
       rows+='<span class="barcell"><div class="barbg"><div class="barfill" style="width:'+bw+'%;background:'+col+'"></div></div><span class="pctv" style="color:'+col+'">'+ps(pv)+'</span></span>';
-      if(!mob){rows+='<span class="cell" style="color:'+(dev>=0?"#1a5e38":"#7a1616")+'">'+(dev>=0?"+":"")+f(dev)+'</span>';}
+      if(!mob){rows+='<span class="cell" style="color:'+(dev>=0?"#1a5e38":"#7a1616")+'">'+(dev>=0?"+":"")+fr(dev)+'</span>';}
       rows+='</div>';
     }
   }
   var tpv=pc(tFcS,tPlS),tc=bc(tpv),tbw=tPlS>0?Math.min(100,Math.round(tFcS/tPlS*100)):0,td=tFcS-tPlS;
   rows+='<div class="trow tot" style="grid-template-columns:'+g+'"><span class="pname">Итого</span>';
   if(!mob){rows+='<span class="cell">'+tPl+'</span><span class="cell bld">'+tFc+'</span>';}
-  rows+='<span class="cell">'+f(tPlS)+'</span><span class="cell bld">'+f(tFcS)+'</span>';
+  rows+='<span class="cell">'+fr(tPlS)+'</span><span class="cell bld">'+fr(tFcS)+'</span>';
   rows+='<span class="barcell"><div class="barbg"><div class="barfill" style="width:'+tbw+'%;background:'+tc+'"></div></div><span class="pctv" style="color:'+tc+'">'+ps(tpv)+'</span></span>';
-  if(!mob){rows+='<span class="cell bld" style="color:'+(td>=0?"#1a5e38":"#7a1616")+'">'+(td>=0?"+":"")+f(td)+'</span>';}
+  if(!mob){rows+='<span class="cell bld" style="color:'+(td>=0?"#1a5e38":"#7a1616")+'">'+(td>=0?"+":"")+fr(td)+'</span>';}
   rows+='</div>';
   var hdr=mob
     ?'<div class="thead" style="grid-template-columns:'+g+'"><span style="text-align:left">Проект</span><span>Пл,тыс&#8381;</span><span>Фк,тыс&#8381;</span><span>Вып.</span></div>'
